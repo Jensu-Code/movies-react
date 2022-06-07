@@ -19,7 +19,7 @@ export function MoviesGrid({search}) {
       :"/discover/movie?page=" + page;
       get(searchUrl).then((data) => {
         setMovies((prevMovies)=>prevMovies.concat(data.results));
-        sethasMore(data.page<data.total_page);
+        sethasMore(data.page<data.total_pages);
         setIsLoding(false);
       });
     }, [search,page]);

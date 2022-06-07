@@ -1,4 +1,4 @@
-import { MoviesGrid } from "./components/MoviesGrid";
+
 import styles from "./app.module.css";
 import React from "react";
 import { MovieDetails } from "./pages/MovieDetails";
